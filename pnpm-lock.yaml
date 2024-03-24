@@ -8,9 +8,12 @@ dependencies:
   '@coinbase/onchainkit':
     specifier: 0.11.0
     version: 0.11.0(@tanstack/react-query@5.28.6)(@xmtp/frames-validator@0.5.2)(graphql-request@6.1.0)(graphql@14.7.0)(react-dom@18.2.0)(react@18.2.0)(viem@2.8.18)
+  '@xmtp/frames-validator':
+    specifier: ^0.5.2
+    version: 0.5.2(typescript@5.4.3)
   mint.club-v2-sdk:
     specifier: ^0.0.88
-    version: 0.0.88(ky@1.2.2)(node-fetch@2.7.0)(typescript@5.4.3)
+    version: 0.0.88(ky@1.2.2)(node-fetch@3.3.2)(typescript@5.4.3)
   next:
     specifier: 13.5.6
     version: 13.5.6(react-dom@18.2.0)(react@18.2.0)
@@ -757,7 +760,7 @@ packages:
     engines: {node: '>=14'}
     dev: false
 
-  /@filebase/client@0.0.5(node-fetch@2.7.0):
+  /@filebase/client@0.0.5(node-fetch@3.3.2):
     resolution: {integrity: sha512-LY2OQe6w5UMiIQ4AXGWCJEsdTReEZm685OMg/pBDtU8XgQrZfFgLYgFl5GtTBFQGha6i3W6XSxE+JrgYc/8Yhg==}
     dependencies:
       '@aws-sdk/client-s3': 3.540.0
@@ -769,7 +772,7 @@ packages:
       '@web-std/file': 3.0.3
       '@web-std/form-data': 3.1.0
       carbites: 1.0.6
-      ipfs-car: github.com/filebase/ipfs-car/f6e736359b81f1651c02d4da36ff74fb38065ff8(node-fetch@2.7.0)
+      ipfs-car: github.com/filebase/ipfs-car/f6e736359b81f1651c02d4da36ff74fb38065ff8(node-fetch@3.3.2)
       it-pipe: 1.1.0
       multiformats: 9.9.0
       p-retry: 4.6.2
@@ -2007,11 +2010,11 @@ packages:
     engines: {node: '>=0.4.0'}
     dev: false
 
-  /dns-over-http-resolver@1.2.3(node-fetch@2.7.0):
+  /dns-over-http-resolver@1.2.3(node-fetch@3.3.2):
     resolution: {integrity: sha512-miDiVSI6KSNbi4SVifzO/reD8rMnxgrlnkrlkugOLQpWQTe2qMdHsZp5DmfKjxNE+/T3VAAYLQUZMv9SMr6+AA==}
     dependencies:
       debug: 4.3.4
-      native-fetch: 3.0.0(node-fetch@2.7.0)
+      native-fetch: 3.0.0(node-fetch@3.3.2)
       receptacle: 1.3.2
     transitivePeerDependencies:
       - node-fetch
@@ -2344,19 +2347,19 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /ipfs-core-types@0.8.4(node-fetch@2.7.0):
+  /ipfs-core-types@0.8.4(node-fetch@3.3.2):
     resolution: {integrity: sha512-sbRZA1QX3xJ6ywTiVQZMOxhlhp4osAZX2SXx3azOLxAtxmGWDMkHYt722VV4nZ2GyJy8qyk5GHQIZ0uvQnpaTg==}
     deprecated: js-IPFS has been deprecated in favour of Helia - please see https://github.com/ipfs/js-ipfs/issues/4336 for details
     dependencies:
       interface-datastore: 6.1.1
-      multiaddr: 10.0.1(node-fetch@2.7.0)
+      multiaddr: 10.0.1(node-fetch@3.3.2)
       multiformats: 9.9.0
     transitivePeerDependencies:
       - node-fetch
       - supports-color
     dev: false
 
-  /ipfs-core-utils@0.12.2(node-fetch@2.7.0):
+  /ipfs-core-utils@0.12.2(node-fetch@3.3.2):
     resolution: {integrity: sha512-RfxP3rPhXuqKIUmTAUhmee6fmaV3A7LMnjOUikRKpSyqESz/DR7aGK7tbttMxkZdkSEr0rFXlqbyb0vVwmn0wQ==}
     deprecated: js-IPFS has been deprecated in favour of Helia - please see https://github.com/ipfs/js-ipfs/issues/4336 for details
     dependencies:
@@ -2365,7 +2368,7 @@ packages:
       browser-readablestream-to-it: 1.0.3
       debug: 4.3.4
       err-code: 3.0.1
-      ipfs-core-types: 0.8.4(node-fetch@2.7.0)
+      ipfs-core-types: 0.8.4(node-fetch@3.3.2)
       ipfs-unixfs: 6.0.9
       ipfs-utils: 9.0.14
       it-all: 1.0.6
@@ -2373,8 +2376,8 @@ packages:
       it-peekable: 1.0.3
       it-to-stream: 1.0.0
       merge-options: 3.0.4
-      multiaddr: 10.0.1(node-fetch@2.7.0)
-      multiaddr-to-uri: 8.0.0(node-fetch@2.7.0)
+      multiaddr: 10.0.1(node-fetch@3.3.2)
+      multiaddr-to-uri: 8.0.0(node-fetch@3.3.2)
       multiformats: 9.9.0
       nanoid: 3.3.7
       parse-duration: 1.1.0
@@ -2821,10 +2824,10 @@ packages:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
     dev: false
 
-  /mint.club-v2-sdk@0.0.88(ky@1.2.2)(node-fetch@2.7.0)(typescript@5.4.3):
+  /mint.club-v2-sdk@0.0.88(ky@1.2.2)(node-fetch@3.3.2)(typescript@5.4.3):
     resolution: {integrity: sha512-Bh5BgemHq1ZbQxXAv4nWpyw8iioziCjkiu7kjzYBUBtRnehfmNLoB0/QC+kofF9uIrx+lN0TgMGsaSQvAYpKwA==}
     dependencies:
-      '@filebase/client': 0.0.5(node-fetch@2.7.0)
+      '@filebase/client': 0.0.5(node-fetch@3.3.2)
       '@rollup/plugin-node-resolve': 15.2.3
       '@types/jsdom': 21.1.6
       '@types/lodash': 4.17.0
@@ -2865,21 +2868,21 @@ packages:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: false
 
-  /multiaddr-to-uri@8.0.0(node-fetch@2.7.0):
+  /multiaddr-to-uri@8.0.0(node-fetch@3.3.2):
     resolution: {integrity: sha512-dq4p/vsOOUdVEd1J1gl+R2GFrXJQH8yjLtz4hodqdVbieg39LvBOdMQRdQnfbg5LSM/q1BYNVf5CBbwZFFqBgA==}
     deprecated: This module is deprecated, please upgrade to @multiformats/multiaddr-to-uri
     dependencies:
-      multiaddr: 10.0.1(node-fetch@2.7.0)
+      multiaddr: 10.0.1(node-fetch@3.3.2)
     transitivePeerDependencies:
       - node-fetch
       - supports-color
     dev: false
 
-  /multiaddr@10.0.1(node-fetch@2.7.0):
+  /multiaddr@10.0.1(node-fetch@3.3.2):
     resolution: {integrity: sha512-G5upNcGzEGuTHkzxezPrrD6CaIHR9uo+7MwqhNVcXTs33IInon4y7nMiGxl2CY5hG7chvYQUQhz5V52/Qe3cbg==}
     deprecated: This module is deprecated, please upgrade to @multiformats/multiaddr
     dependencies:
-      dns-over-http-resolver: 1.2.3(node-fetch@2.7.0)
+      dns-over-http-resolver: 1.2.3(node-fetch@3.3.2)
       err-code: 3.0.1
       is-ip: 3.1.0
       multiformats: 9.9.0
@@ -2919,6 +2922,14 @@ packages:
       node-fetch: '*'
     dependencies:
       node-fetch: 2.7.0
+    dev: false
+
+  /native-fetch@3.0.0(node-fetch@3.3.2):
+    resolution: {integrity: sha512-G3Z7vx0IFb/FQ4JxvtqGABsOTIqRWvgQz6e+erkB+JJD6LrszQtMozEHI4EkmgZQvnGHrpLVzUWk7t4sJCIkVw==}
+    peerDependencies:
+      node-fetch: '*'
+    dependencies:
+      node-fetch: 3.3.2
     dev: false
 
   /next@13.5.6(react-dom@18.2.0)(react@18.2.0):
@@ -3773,7 +3784,7 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  github.com/filebase/ipfs-car/f6e736359b81f1651c02d4da36ff74fb38065ff8(node-fetch@2.7.0):
+  github.com/filebase/ipfs-car/f6e736359b81f1651c02d4da36ff74fb38065ff8(node-fetch@3.3.2):
     resolution: {tarball: https://codeload.github.com/filebase/ipfs-car/tar.gz/f6e736359b81f1651c02d4da36ff74fb38065ff8}
     id: github.com/filebase/ipfs-car/f6e736359b81f1651c02d4da36ff74fb38065ff8
     name: ipfs-car
@@ -3787,8 +3798,8 @@ packages:
       browser-readablestream-to-it: 1.0.3
       idb-keyval: 6.2.1
       interface-blockstore: 2.0.3
-      ipfs-core-types: 0.8.4(node-fetch@2.7.0)
-      ipfs-core-utils: 0.12.2(node-fetch@2.7.0)
+      ipfs-core-types: 0.8.4(node-fetch@3.3.2)
+      ipfs-core-utils: 0.12.2(node-fetch@3.3.2)
       ipfs-unixfs-exporter: 7.0.11
       ipfs-unixfs-importer: 9.0.10
       ipfs-utils: 9.0.14
